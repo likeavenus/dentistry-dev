@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-italic';
+  src: url('../fonts/Lato-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz Reg';
+  src: url('../fonts/YanoneKaffeesatz-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz Bold';
+  src: url('../fonts/YanoneKaffeesatz-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$lato: 'Lato',
+Helvetica,
+Arial,
+sans-serif;
+
+$latoItalic: 'Lato-italic',
+Helvetica,
+Arial,
+sans-serif;
+
+$yannoneBold: 'Yanone Kaffeesatz Bold',
+Helvetica,
+Arial,
+sans-serif;
+
+$yannoneReg: 'Yanone Kaffeesatz Reg',
+Helvetica,
+Arial,
+sans-serif;
+
+$CustomFont: $yannoneReg,
+Helvetica,
+Arial,
+sans-serif;
