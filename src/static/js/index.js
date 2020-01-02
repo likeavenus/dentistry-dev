@@ -1,6 +1,5 @@
 import $ from "jquery";
 
-// import Component from '../../components/Component/Component';
+import header from "../../components/header/header";
 
-// Component()
-
+header();

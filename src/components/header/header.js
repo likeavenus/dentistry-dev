@@ -1,3 +1,9 @@
 export default function header() {
-    // Your code is here 
+    const headerBurger = document.querySelector('.js-burger');
+    const headerElem = document.querySelector('.js-header');
+
+    headerBurger.addEventListener('click', function () {
+        headerElem.classList.toggle('default');
+        headerElem.classList.toggle('active');
+    });
 }
