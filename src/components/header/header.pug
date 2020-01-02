@@ -3,3 +3,19 @@ mixin header(data)
         .logo__box
             img(src='../img/header/icon.svg').logo__img
         h3.header__title Стоматологическая клиника БОРИСТОМ
+
+        button(type="button").header__burger
+            span.burger__item
+            span.burger__item
+
+        .header__menu
+            .header__numbers
+                a(href="tel:89999999999").header__number +7 (498) 917-55-47
+                a(href="tel:89999999999").header__number +7 (919) 998-99-19
+
+            .header__links
+                a(href="#").header__link Услуги
+                a(href="#").header__link Фото
+                a(href="#").header__link Прайс
+                a(href="#").header__link Статьи
+                a(href="#").header__link Контакты
