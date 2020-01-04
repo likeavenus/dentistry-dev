@@ -1,0 +1,64 @@
+.lenta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 77px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.lenta__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 820px;
+  height: 100%;
+  animation: lenta 15s linear infinite;
+  transform: translateX(-190vw);
+}
+
+@keyframes lenta {
+  0% {
+    transform: translateX(-190vw);
+  }
+
+  100% {
+    transform: translateX(180vw);
+  }
+}
+
+
+.lenta__item {
+  font-size: 18.6667px;
+  line-height: 28px;
+  font-family: $oswald;
+  color: #7E9893;
+  text-transform: uppercase;
+  margin: 0 40px;
+  position: relative;
+  white-space: nowrap;
+
+  &:nth-child(2n) {
+    color: #fff;
+    text-shadow: 0 0 2px #7E9893;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -45px;
+    width: 7px;
+    height: 7px;
+    background: #7E9893;
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}

@@ -2,6 +2,7 @@ extends template/_layout
 include ../components/header/header
 include ../components/second/second
 include ../components/third/third
+include ../components/lenta/lenta
 block vars
   - var title = "Главная";
 
@@ -10,4 +11,5 @@ block content
 
   +header()
   +second()
+  +lenta()
   +third()
