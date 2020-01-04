@@ -1,0 +1,9 @@
+mixin card-slider(data)
+    .card-slider
+        .card-slider__box
+            .card-slider__title О НАС
+
+            .cards.owl-carousel
+                each val in data.items
+                    .card-item= val
+

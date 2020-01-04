@@ -1,0 +1,43 @@
+.card {
+  display: block;
+  width: 100%;
+  max-width: 436px;
+  height: 238.53px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  @media(min-width: $tablet) {
+    height: 325px;
+  }
+}
+
+.card__title {
+  color: #fff;
+  font-family: $lato;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: normal;
+  padding-top: 41px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.card__link {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: url("../img/card/link.svg") no-repeat center / contain;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    bottom: 27px;
+  }
+}

@@ -1,0 +1,39 @@
+include ../card/card
+include ../card-slider/card-slider
+mixin second(data)
+    section.second
+        +card({
+            bg: '../img/card/pulpitis.jpg',
+            title: 'Лечение пульпита',
+            cardHref: '#'
+        })
+        +card({
+            bg: '../img/card/veneering.jpg',
+            title: 'Винирование зубов',
+            cardHref: '#'
+        })
+        +card({
+            bg: '../img/card/restoration.jpg',
+            title: 'Реставрация зубов',
+            cardHref: '#'
+        })
+        +card({
+            bg: '../img/card/prevention.jpg',
+            title: 'Профилактика и гигиена зубов',
+            cardHref: '#'
+        })
+        +card-slider({
+            items: [
+                'Успешная работа нашей частной клиники с 2016 г. У каждого нашего врача опыт более 20 лет',
+                'Анестезирующие средства заблокируют любые неприятные ощущения',
+                'Предоставляем сертификаты ко всем нашим препаратам',
+                'Конкурентные цены. Проводим акции на услуги и скидки пенсионерам',
+                'В клинике установлено новое современное оборудование',
+                'Выдаем гарантии качества, чтобы вы всегда были уверены в нашей работе'
+            ]
+        })
+        +card({
+            bg: '../img/card/implantation.jpg',
+            title: 'Имплантация зубов',
+            cardHref: '#'
+        })

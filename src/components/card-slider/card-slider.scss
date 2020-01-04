@@ -1,0 +1,99 @@
+.card-slider {
+  display: block;
+  background: #7E9893;
+  height: 238px;
+  width: 100%;
+  max-width: 436px;
+
+  @media(min-width: $tablet) {
+    height: 325px;
+  }
+}
+
+.card-slider__title {
+  font-family: $lato;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #E5E5E5;
+  font-size: 29.2923px;
+  line-height: 35px;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+}
+
+.card-slider__box {
+  width: 272px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    width: 371.85px;
+  }
+}
+
+.card-item {
+  font-size: 13.1815px;
+  line-height: 18px;
+  color: #fff;
+  font-family: $lato;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+
+.cards {
+  height: 155px;
+
+  @media (min-width: $tablet) {
+    height: 213px;
+  }
+
+  &.owl-carousel {
+    & span {
+      display: none;
+    }
+
+    & button {
+      width: 9.52px;
+      height: 16.11px;
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+    }
+
+    & .owl-prev {
+      background: url("../img/card-slider/arrow.svg") no-repeat center / contain !important;
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+    }
+
+    & .owl-next {
+      background: url("../img/card-slider/arrow.svg") no-repeat center / contain !important;
+      transform: rotate(180deg);
+    }
+
+    @media (min-width: $tablet) {
+      & button{
+        width: 13px;
+        height: 22px;
+      }
+
+      & .owl-prev {
+        left: 26px;
+      }
+
+      & .owl-next {
+        left: 152px;
+      }
+    }
+  }
+}
