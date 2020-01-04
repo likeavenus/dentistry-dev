@@ -1,29 +1,36 @@
 include ../card/card
 include ../card-slider/card-slider
-mixin second(data)
-    section.second.container
+mixin third(data)
+    section.third.container
         +card({
-            bg: '../img/card/pulpitis.jpg',
-            title: 'Лечение пульпита',
+            bg: '../img/card/lazer.jpg',
+            title: 'Лазерная терапия',
             cardHref: '#'
         })
         +card({
-            bg: '../img/card/veneering.jpg',
-            title: 'Винирование зубов',
+            bg: '../img/card/prosthesis.jpg',
+            title: 'Протезирование зубов',
             cardHref: '#'
         })
         +card({
-            bg: '../img/card/restoration.jpg',
-            title: 'Реставрация зубов',
+            bg: '../img/card/caries.jpg',
+            title: 'Лечение кариеса',
             cardHref: '#'
         })
         +card({
-            bg: '../img/card/prevention.jpg',
-            title: 'Профилактика и гигиена зубов',
+            bg: '../img/card/x-ray.jpg',
+            title: 'Рентгенологическое исследование',
             cardHref: '#'
         })
+
+        +card({
+            bg: '../img/card/whitening.jpg',
+            title: 'Отбеливание зубов',
+            cardHref: '#'
+        })
+
         +card-slider({
-            title: 'О НАС',
+            title: 'СОВЕТЫ',
             items: [
                 'Успешная работа нашей частной клиники с 2016 г. У каждого нашего врача опыт более 20 лет',
                 'Анестезирующие средства заблокируют любые неприятные ощущения',
@@ -33,8 +40,4 @@ mixin second(data)
                 'Выдаем гарантии качества, чтобы вы всегда были уверены в нашей работе'
             ]
         })
-        +card({
-            bg: '../img/card/implantation.jpg',
-            title: 'Имплантация зубов',
-            cardHref: '#'
-        })
+

@@ -1,7 +1,7 @@
 mixin card-slider(data)
     .card-slider
         .card-slider__box
-            .card-slider__title О НАС
+            .card-slider__title=data.title
 
             .cards.owl-carousel
                 each val in data.items
