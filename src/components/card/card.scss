@@ -38,6 +38,8 @@
   border-radius: 50%;
 
   @media (min-width: $tablet) {
+    width: 67px;
+    height: 67px;
     bottom: 27px;
   }
 }
