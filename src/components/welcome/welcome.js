@@ -1,7 +1,7 @@
 import Plyr from 'plyr';
 export default function welcome() {
     const player = new Plyr('#player', {
-        controls: ['mute', 'captions', 'pip', 'airplay', 'fullscreen']
+        controls: ['mute', 'captions']
     });
 
     const playButton = document.querySelector('.js-play-video');

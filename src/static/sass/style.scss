@@ -5,3 +5,9 @@
     margin: 0 auto;
   }
 }
+
+.main {
+  @media (min-width: $laptop) {
+    margin-left: 132px;
+  }
+}
