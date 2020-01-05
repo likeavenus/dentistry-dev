@@ -1,5 +1,6 @@
 extends template/_layout
 include ../components/header/header
+include ../components/welcome/welcome
 include ../components/second/second
 include ../components/third/third
 include ../components/lenta/lenta
@@ -10,6 +11,7 @@ block vars
 block content
 
   +header()
+  +welcome()
   +second()
   +lenta()
   +third()

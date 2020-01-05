@@ -1,0 +1,96 @@
+.welcome {
+  display: block;
+  padding-top: 59px;
+
+  @media (min-width: $laptop) {
+    padding-top: 132px;
+  }
+}
+
+.welcome__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $laptop) {
+    flex-direction: row-reverse;
+  }
+}
+
+.video__box {
+  //height: 266px;
+  position: relative;
+
+  @media (min-width: $laptop) {
+    width: 50%;
+  }
+}
+
+.video__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 67px;
+  height: 67px;
+  background: url("../img/welcome/play.svg") no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  z-index: 30;
+  transition: all .3s ease;
+
+  &.active {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
+.welcome__box {
+  padding-top: 22px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 67px;
+
+  @media (min-width: $laptop) {
+    width: 50%;
+
+    align-items: flex-start;
+  }
+}
+
+.welcome__title {
+  font-size: 30px;
+  line-height: 29px;
+  font-family: $yannoneBold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.welcome__subtitle {
+  font-family: $lato;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  margin-bottom: 34px;
+}
+
+.welcome__link {
+  width: 280px;
+  height: 52px;
+  font-family: $yannoneReg;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(161.2deg, #E26A66 -59.48%, #FEB58A 134.96%), #C4C4C4;
+  text-decoration: none;
+}
