@@ -4,7 +4,9 @@ import 'owl.carousel';
 import header from "../../components/header/header";
 import welcome from "../../components/welcome/welcome";
 import cardSlider from "../../components/card-slider/card-slider";
+import chat from "../../components/chat/chat";
 
 header();
 welcome();
 cardSlider();
+chat();

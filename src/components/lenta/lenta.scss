@@ -1,9 +1,10 @@
 .lenta {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 77px;
+  width: 5000px;
   background: #fff;
   overflow: hidden;
 }
@@ -13,19 +14,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 820px;
+  //width: 820px;
+  width: 50%;
   height: 100%;
-  animation: lenta 15s linear infinite;
-  transform: translateX(-190vw);
+  animation: lenta 20s linear infinite;
 }
 
 @keyframes lenta {
   0% {
-    transform: translateX(-190vw);
+    transform: translateX(-100%);
   }
 
   100% {
-    transform: translateX(180vw);
+    transform: translateX(100%);
   }
 }
 

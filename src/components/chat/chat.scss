@@ -1,0 +1,76 @@
+.chat {
+  display: block;
+}
+
+.chat__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat__images {
+  width: 100%;
+  height: 238px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat__images-item {
+  width: 100%;
+  height: 100%;
+  max-width: 436px;
+  background-position: center;
+  background-size: cover;
+}
+
+.chat__box {
+  width: 280px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat__box-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    & .chat__bg {
+      background: url("../img/chat/boris-chat.svg") no-repeat center / contain;
+    }
+
+    & .chat__text {
+      padding-left: 30px;
+    }
+  }
+}
+
+.chat__bg {
+  width: 219px;
+  height: 38px;
+  background: url("../img/chat/user-chat.svg") no-repeat center / contain;
+}
+
+.chat__avatar {
+  width: 37px;
+  height: 37px;
+}
+
+.chat__text {
+  padding: 8px 5px;
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $lato;
+  color: #fff;
+}
