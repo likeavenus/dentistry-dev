@@ -12,9 +12,6 @@ export default function chat() {
     const chat = (entries, observer) => {
         entries.forEach(item => {
             if (item.isIntersecting) {
-                console.log(true)
-
-
                 typingAnimation();
                 observer.unobserve(item.target);
             }

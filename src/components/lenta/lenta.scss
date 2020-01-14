@@ -1,34 +1,52 @@
 .lenta {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 77px;
-  width: 5000px;
+  width: 4000px;
   background: #fff;
   overflow: hidden;
+
+  @media (min-width: $laptop) {
+    height: 132px;
+  }
 }
 
 .lenta__box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
-  //width: 820px;
-  width: 50%;
+  //width: 50%;
+  width: auto;
   height: 100%;
-  animation: lenta 20s linear infinite;
+  animation: lenta 100s linear infinite;
+
+  &:nth-child(2) {
+    //justify-content: flex-start;
+  }
 }
 
 @keyframes lenta {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(200%);
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(-400%);
   }
 }
+
+//@keyframes lenta2 {
+//  0% {
+//    transform: translateX(-1305px);
+//  }
+//
+//  100% {
+//    transform: translateX(1305px);
+//  }
+//}
 
 
 .lenta__item {
@@ -59,7 +77,26 @@
 
   &:last-child {
     &:after {
-      display: none;
+      //display: none;
     }
   }
+}
+
+.lenta.left {
+
+  display: none;
+
+  @media (min-width: $laptop) {
+    display: block;
+    width: 1305px;
+    top: 1305px;
+  }
+  transform-origin: top left;
+  transform: rotate(-90deg);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid #7E9893;
 }
