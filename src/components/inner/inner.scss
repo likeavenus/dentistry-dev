@@ -1,0 +1,68 @@
+.inner__section {
+  padding-top: 85px;
+}
+
+.inner__nav {
+  width: 280px;
+  margin: 0 auto 25px;
+}
+
+.nav__link {
+  margin: 0 5px;
+  font-family: $lato;
+  font-size: 12px;
+  line-height: 14px;
+
+  &:not(:last-child):after {
+    content: '—';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}
+
+.inner__avatar {
+  margin-bottom: 30px;
+  max-width: 544px;
+  width: 100%;
+}
+
+.inner__title {
+  font-size: 22px;
+  line-height: 74.1%;
+  font-family: $yannoneReg;
+  margin-bottom: 20px;
+}
+
+.inner__pulpit-item {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $lato
+}
+
+.inner__info {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.inner__info-text {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inner__pulpit-list {
+  margin-bottom: 10px;
+}
+
+.inner__pulpit-past {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $lato;
+  margin-bottom: 12px;
+}
+
+.inner__pulpit-subinfo {
+  font-size: 10px;
+  line-height: 12px;
+  font-family: $lato;
+}
