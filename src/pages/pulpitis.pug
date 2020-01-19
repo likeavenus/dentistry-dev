@@ -1,5 +1,6 @@
 extends template/_layout
 include ../components/header/header
+include ../components/lenta/lenta
 block vars
     - var title = "Лечение пульпита";
 
@@ -7,6 +8,9 @@ block vars
 block content
 
     +header()
+    +lenta({
+        class: 'left'
+    })
 
     section.inner__section
         nav.inner__nav
@@ -32,4 +36,20 @@ block content
 
                 a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
 
+        .inner__bottom
+            h3.inner__bottom-title Воспаление устраняется двумя способами:
+            .inner__bottom-box
+                .inner__bottom-item
+                    .inner__pulp-img-box
+                        img(src="../img/inner/pulp-i.png").inner__pulp-img
+                    div
+                        h4.inner__bottom-subtitle Консервативный метод.
+                        p.inner__bottom-text Обнажают пульпу; проводят антибактериальную обработку; накладывают небольшую повязку, пропитанной гидроксидом кальция; устанавливают временную пломбу. В течение нескольких дней состав должен полностью снять воспаление. Для проверки достижения результата делается рентген. Если все успешно, то зуб закрывают постоянной пломбой.
 
+
+                .inner__bottom-item
+                    .inner__pulp-img-box
+                        img(src="../img/inner/pulp-i-2.png").inner__pulp-img
+                    div
+                        h4.inner__bottom-subtitle Хирургическое лечение.
+                        p.inner__bottom-text Предполагает удаление нерва. Этот метод более популярен, он применим и на более поздней стадии течения болезни. Возможна полная или частичная ликвидация пульпы.
