@@ -1,9 +1,7 @@
 {
   "name": "gulp2018",
   "version": "1.0.0",
-  "author": "Traffic Isobar",
   "main": "gulpfile.js",
-  "repository": "https://gitlab.t-agency.ru/EgorDyachenko/gulp2018",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",

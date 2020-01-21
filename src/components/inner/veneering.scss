@@ -9,5 +9,91 @@
 
   width: 240px;
   margin-bottom: 10px;
+
+  @media (min-width: $laptop) {
+    font-size: 16px;
+    line-height: 19px;
+    width: auto;
+    margin-bottom: 25px;
+  }
+}
+
+.veneer__info {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $lato;
+  margin-bottom: 30px;
+
+  @media (min-width: $laptop) {
+    width: 808px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 44px;
+  }
+}
+
+.inner__bottom--vennering {
+  @media (min-width: 1440px) {
+    width: 1176px;
+  }
+}
+
+
+.veneer__info-title {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $lato;
+  font-weight: bold;
+  margin-bottom: 12px;
+
+  @media (min-width: $laptop) {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+
+.veneer__list {
+  margin-bottom: 12px;
+
+  @media (min-width: $laptop) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+.veneer__list-item {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $lato;
+  padding-left: 19px;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #7E9893;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 22px;
+    line-height: 30px;
+    width: 400px;
+    padding-left: 31px;
+
+    &:before {
+      top: 5px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 500px;
+  }
 }
 
