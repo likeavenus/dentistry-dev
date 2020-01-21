@@ -1,0 +1,36 @@
+extends template/_layout
+include ../components/header/header
+include ../components/lenta/lenta
+block vars
+    - var title = "Винирование зубов";
+
+
+block content
+
+    +header()
+    +lenta({
+        class: 'left'
+    })
+
+    section.inner__section
+        nav.inner__nav
+            a(href="./index.html").nav__link Главная
+            a(href="./index.html#services").nav__link  Услуги
+            span.nav__link Винирование зубов
+
+        .inner__box
+            img(src="../img/inner/pulpit.jpg").inner__avatar
+
+            .inner__info
+                .inner__info-text
+                    h1.inner__title Винирование зубов
+
+                    ul.inner__veneer-list
+                        li.inner__veneer-item Эстетическая моделировка на воске от&nbsp;2000&nbsp;₽&nbsp;—&nbsp;1&nbsp;ед.
+                        li.inner__veneer-item Изготовление временной коронки от&nbsp;2500&nbsp;₽&nbsp;—&nbsp;1&nbsp;ед.
+                        li.inner__veneer-item Винир цельнокерамический от&nbsp;20&nbsp;000&nbsp;₽&nbsp;—&nbsp;1&nbsp;зуб
+
+                a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
+
+        .inner__bottom.inner__bottom--vennering
+
