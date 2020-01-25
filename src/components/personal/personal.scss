@@ -1,0 +1,50 @@
+.personal {
+  display: block;
+}
+
+.personal__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.personal__slider-content {
+  height: 186px;
+  background: #7E9893;
+  padding: 20px;
+}
+
+.personal__item-text {
+  color: #fff;
+  font-family: $lato;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.personal__slider {
+  &.owl-carousel {
+    & span {
+      display: none;
+    }
+
+    & button {
+      width: 9.52px;
+      height: 16.11px;
+      position: absolute;
+    }
+
+    & .owl-prev {
+       background: url('../img/card-slider/arrow.svg') no-repeat center/contain !important;
+       position: absolute;
+       left: 20px;
+       bottom: 20px;
+     }
+
+    & .owl-next {
+      background: url('../img/card-slider/arrow.svg') no-repeat center/contain !important;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      transform: rotate(180deg);
+    }
+  }
+}

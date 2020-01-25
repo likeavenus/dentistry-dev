@@ -47,6 +47,9 @@ export default function chat() {
         const speed = 20;
 
         for (let i = 0; i < chatBoxElems.length; i++) {
+            let currentMargin;
+            let currentElem;
+
             if (i === 0) {
                 chatBoxElems[i].style.display = 'flex';
                 new Typed(chatTextElems[i], {
@@ -74,6 +77,11 @@ export default function chat() {
                 }, 8000);
             } else if (i === 3) {
                 setTimeout(function () {
+                    currentElem = chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling;
+                    currentMargin = `-${chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling.offsetHeight + parseInt(getComputedStyle(currentElem).marginBottom)}px`;
+                    currentElem.classList.add('hide-animation');
+                    currentElem.style.marginTop = currentMargin;
+
                     chatBoxElems[i].previousElementSibling.querySelector('.typed-cursor').style.display = 'none';
                     chatBoxElems[i].style.display = 'flex';
                     new Typed(chatTextElems[i], {
@@ -83,6 +91,11 @@ export default function chat() {
                 }, 11000);
             } else if (i === 4) {
                 setTimeout(function () {
+                    currentElem = chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling;
+                    currentMargin = `-${chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling.offsetHeight + parseInt(getComputedStyle(currentElem).marginBottom)}px`;
+                    currentElem.classList.add('hide-animation');
+                    currentElem.style.marginTop = currentMargin;
+
                     chatBoxElems[i].previousElementSibling.querySelector('.typed-cursor').style.display = 'none';
                     chatBoxElems[i].style.display = 'flex';
                     new Typed(chatTextElems[i], {
@@ -92,6 +105,11 @@ export default function chat() {
                 }, 15000);
             } else if (i === 5) {
                 setTimeout(function () {
+                    currentElem = chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling;
+                    currentMargin = `-${chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling.offsetHeight + parseInt(getComputedStyle(currentElem).marginBottom)}px`;
+                    currentElem.classList.add('hide-animation');
+                    currentElem.style.marginTop = currentMargin;
+
                     chatBoxElems[i].previousElementSibling.querySelector('.typed-cursor').style.display = 'none';
                     chatBoxElems[i].style.display = 'flex';
                     new Typed(chatTextElems[i], {
@@ -101,6 +119,11 @@ export default function chat() {
                 }, 18000);
             } else if (i === 6) {
                 setTimeout(function () {
+                    currentElem = chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling;
+                    currentMargin = `-${chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling.offsetHeight + parseInt(getComputedStyle(currentElem).marginBottom)}px`;
+                    currentElem.classList.add('hide-animation');
+                    currentElem.style.marginTop = currentMargin;
+
                     chatBoxElems[i].previousElementSibling.querySelector('.typed-cursor').style.display = 'none';
                     chatBoxElems[i].style.display = 'flex';
                     new Typed(chatTextElems[i], {
@@ -108,8 +131,13 @@ export default function chat() {
                         typeSpeed: speed,
                     })
                 }, 21000);
-            } else if (i === 6) {
+            } else if (i === 7) {
                 setTimeout(function () {
+                    currentElem = chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling;
+                    currentMargin = `-${chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling.offsetHeight + parseInt(getComputedStyle(currentElem).marginBottom)}px`;
+                    currentElem.classList.add('hide-animation');
+                    currentElem.style.marginTop = currentMargin;
+
                     chatBoxElems[i].previousElementSibling.querySelector('.typed-cursor').style.display = 'none';
                     chatBoxElems[i].style.display = 'flex';
                     new Typed(chatTextElems[i], {
@@ -117,8 +145,13 @@ export default function chat() {
                         typeSpeed: speed,
                     })
                 }, 24000);
-            } else if (i === 7) {
+            } else if (i === 8) {
                 setTimeout(function () {
+                    currentElem = chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling;
+                    currentMargin = `-${chatBoxElems[i].previousElementSibling.previousElementSibling.previousElementSibling.offsetHeight + parseInt(getComputedStyle(currentElem).marginBottom)}px`;
+                    currentElem.classList.add('hide-animation');
+                    currentElem.style.marginTop = currentMargin;
+
                     chatBoxElems[i].previousElementSibling.querySelector('.typed-cursor').style.display = 'none';
                     chatBoxElems[i].style.display = 'flex';
                     new Typed(chatTextElems[i], {

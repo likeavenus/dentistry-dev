@@ -48,7 +48,7 @@
 
 
   @media (min-width: $laptop) {
-    height: 132px;
+    height: 100px;
     border-bottom: 1px solid #7E9893;
   }
 }
@@ -64,8 +64,8 @@
   margin-right: 12px;
 
   @media (min-width: $laptop) {
-    width: 132px;
-    height: 132px;
+    width: 100px;
+    height: 100px;
     flex-shrink: 0;
   }
 }
@@ -308,7 +308,7 @@
     position: absolute;
     top: 132px;
     left: 0;
-    width: 132px;
+    width: 100px;
     height: 100vh;
   }
 }
