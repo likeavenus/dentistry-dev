@@ -6,6 +6,11 @@
     padding-top: 132px;
     height: 769px;
   }
+
+  @media (min-width: 1440px) {
+    padding-top: 99px;
+    height: 800px;
+  }
 }
 
 .welcome__container {
@@ -74,6 +79,10 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0 58px;
+  }
 }
 
 .welcome__title {
@@ -93,6 +102,7 @@
   @media (min-width: $laptop) {
     font-size: 54px;
     line-height: 57px;
+    text-align: left;
     margin-bottom: 24px;
   }
 }

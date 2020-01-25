@@ -4,12 +4,21 @@
   justify-content: center;
   align-items: center;
   height: 77px;
-  width: 4000px;
+  width: 2000px;
   background: #fff;
   overflow: hidden;
 
+  @media (min-width: $tablet) {
+    width: 2500px;
+  }
+
   @media (min-width: $laptop) {
     height: 100px;
+    width: 4000px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 5000px;
   }
 }
 
@@ -24,29 +33,20 @@
   animation: lenta 100s linear infinite;
 
   &:nth-child(2) {
-    //justify-content: flex-start;
+
   }
 }
 
 @keyframes lenta {
   0% {
-    transform: translateX(200%);
+    transform: translateX(160%);
   }
 
   100% {
-    transform: translateX(-400%);
+    transform: translateX(-380%);
   }
 }
 
-//@keyframes lenta2 {
-//  0% {
-//    transform: translateX(-1305px);
-//  }
-//
-//  100% {
-//    transform: translateX(1305px);
-//  }
-//}
 
 
 .lenta__item {
