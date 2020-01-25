@@ -1,7 +1,7 @@
 .card {
   display: block;
   width: 100%;
-  max-width: 436px;
+  max-width: 649px;
   height: 238.53px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,8 +9,21 @@
   position: relative;
 
   @media(min-width: $tablet) {
+    width: 384px;
+    height: 286.24px;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: 436px;
+    width: 386.5px;
     height: 325px;
   }
+
+  @media (min-width: 1440px) {
+    width: 436px;
+    height: 325px;
+  }
+
 }
 
 .card__title {
@@ -25,6 +38,8 @@
   @media (min-width: $tablet) {
     font-size: 40px;
     line-height: 48px;
+    padding-top: 50px;
+    padding-left: 20px;
   }
 }
 
@@ -38,8 +53,8 @@
   border-radius: 50%;
 
   @media (min-width: $tablet) {
-    width: 67px;
-    height: 67px;
+    width: 59px;
+    height: 59px;
     bottom: 27px;
   }
 }

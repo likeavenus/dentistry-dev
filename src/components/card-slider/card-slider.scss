@@ -3,9 +3,21 @@
   background: #7E9893;
   height: 238px;
   width: 100%;
-  max-width: 436px;
+  max-width: 649px;
 
   @media(min-width: $tablet) {
+    width: 384px;
+    height: 286.24px;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: 436px;
+    height: 325px;
+    width: 386px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 437px;
     height: 325px;
   }
 }
@@ -32,7 +44,14 @@
   padding-top: 20px;
 
   @media (min-width: $tablet) {
+    width: 326.7px;
+  }
+
+  @media (min-width: $laptop) {
     width: 371.85px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -53,7 +72,7 @@
   height: 155px;
 
   @media (min-width: $tablet) {
-    height: 213px;
+    height: 163px;
   }
 
   &.owl-carousel {

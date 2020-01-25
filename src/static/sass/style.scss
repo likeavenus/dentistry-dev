@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $laptop) {
-    //width: 1200px;
+    width: 100%;
   }
   @media (min-width: 1440px) {
     width: 1310px;
@@ -18,4 +18,8 @@
   @media (min-width: $laptop) {
     margin-left: 100px;
   }
+}
+
+img {
+  font-size: 0;
 }

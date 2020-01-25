@@ -6,6 +6,7 @@ export default function personal() {
         nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 6000
+        autoplayTimeout: 6000,
+        loop: true
     })
 }
