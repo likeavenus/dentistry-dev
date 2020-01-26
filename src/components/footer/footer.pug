@@ -1,0 +1,19 @@
+mixin footer(data)
+    footer.footer
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        .footer__box
+            .footer__top
+                h4.footer__title Запишитесь на бесплатный осмотр
+                a(href="tel:84989175547").footer__num +7 (498) 917-55-47
+                a(href="tel:79199989919").footer__num +7 (919) 998-99-19
+
+            .footer__mid
+                p.footer__address Московская область, Ленинский р-н, д. Дрожжино, ул. Новое шоссе д. 7 кор. 2 пом. 3
+                .map#map
+                p.footer__address Добраться до нас можно от метро Бульвар Дмитрия Донского и от ж/д станции Бутово.
+
+            .footer__bot
+                .footer__bot-text Следите за нашими актуальными акциями
+                img(src="../img/footer/inst.svg" alt="instagram").footer__inst
+
+        .footer__copyright © 2019. Бористом

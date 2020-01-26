@@ -6,6 +6,7 @@ import welcome from "../../components/welcome/welcome";
 import cardSlider from "../../components/card-slider/card-slider";
 import chat from "../../components/chat/chat";
 import personal from "../../components/personal/personal";
+import footer from "../../components/footer/footer";
 
 try {
     header();
@@ -13,6 +14,7 @@ try {
     cardSlider();
     chat();
     personal();
+    footer();
 } catch (e) {
 
 }
