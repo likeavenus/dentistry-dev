@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/style.min.css"/><link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  </head>
+  <body class="page">
+    <div class="page__wrapper">
+      <header class="header js-header default">
+        <div class="logo__box"><img class="logo__img" src="../img/header/icon.svg"/></div>
+        <h3 class="header__title">Стоматологическая клиника БОРИСТОМ</h3>
+        <button class="header__burger js-burger" type="button"><span class="burger__item"></span><span class="burger__item"></span></button>
+        <div class="header__menu js-menu">
+          <div class="header__numbers"><a class="header__number" href="tel:89999999999">+7 (919) 998-99-19</a><a class="header__number" href="tel:89999999999">+7 (498) 917-55-47</a></div>
+          <div class="header__links"><a class="header__link" href="#">Услуги</a><a class="header__link" href="#">Фото</a><a class="header__link" href="#">Прайс</a><a class="header__link" href="#">Статьи</a><a class="header__link" href="#">Контакты</a></div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="welcome">
+          <div class="welcome__container container">
+            <div class="video__box js-video-wrap">
+              <video id="player" playsinline="playsinline" controls="controls">
+                <source src="../img/welcome/video.mp4" type="video/mp4"/>
+              </video>
+              <button class="video__play js-play-video" type="button"></button>
+            </div>
+            <div class="welcome__box">
+              <h1 class="welcome__title">Красивая улыбка начинается со&nbsp;здоровых зубов</h1>
+              <p class="welcome__subtitle">Лечение зубов по оптимальной цене</p><a class="button__sig-up" href="#">Записаться на бесплатный приём</a>
+            </div>
+          </div>
+        </section>
+        <section class="second container" id="services">
+          <div class="card" data-bg="../img/card/pulpitis.jpg" style="background-image: url(&quot;../img/card/pulpitis.jpg&quot;);">
+            <h3 class="card__title">Лечение пульпита</h3><a class="card__link" href="./pulpitis.html" target="_blank"></a>
+          </div>
+          <div class="card" data-bg="../img/card/veneering.jpg" style="background-image: url(&quot;../img/card/veneering.jpg&quot;);">
+            <h3 class="card__title">Винирование зубов</h3><a class="card__link" href="./veneering.html" target="_blank"></a>
+          </div>
+          <div class="card" data-bg="../img/card/restoration.jpg" style="background-image: url(&quot;../img/card/restoration.jpg&quot;);">
+            <h3 class="card__title">Реставрация зубов</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+          <div class="card" data-bg="../img/card/prevention.jpg" style="background-image: url(&quot;../img/card/prevention.jpg&quot;);">
+            <h3 class="card__title">Профилактика и гигиена зубов</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+          <div class="card-slider">
+            <div class="card-slider__box">
+              <div class="card-slider__title">О НАС</div>
+              <div class="cards owl-carousel">
+                <div class="card-item">Успешная работа нашей частной клиники с 2016 г. У каждого нашего врача опыт более 20 лет</div>
+                <div class="card-item">Анестезирующие средства заблокируют любые неприятные ощущения</div>
+                <div class="card-item">Предоставляем сертификаты ко всем нашим препаратам</div>
+                <div class="card-item">Конкурентные цены. Проводим акции на услуги и скидки пенсионерам</div>
+                <div class="card-item">В клинике установлено новое современное оборудование</div>
+                <div class="card-item">Выдаем гарантии качества, чтобы вы всегда были уверены в нашей работе</div>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-bg="../img/card/implantation.jpg" style="background-image: url(&quot;../img/card/implantation.jpg&quot;);">
+            <h3 class="card__title">Имплантация зубов</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+        </section>
+        <section class="lenta">
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+        </section>
+        <section class="lenta left">
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+          <div class="lenta__box">
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+            <div class="lenta__item">Уверенная улыбка</div>
+            <div class="lenta__item">Гарантия качества</div>
+            <div class="lenta__item">Лечение без боли</div>
+            <div class="lenta__item">Здоровые зубы</div>
+          </div>
+        </section>
+        <section class="third container">
+          <div class="card" data-bg="../img/card/lazer.jpg" style="background-image: url(&quot;../img/card/lazer.jpg&quot;);">
+            <h3 class="card__title">Лазерная терапия</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+          <div class="card" data-bg="../img/card/prosthesis.jpg" style="background-image: url(&quot;../img/card/prosthesis.jpg&quot;);">
+            <h3 class="card__title">Протезирование зубов</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+          <div class="card" data-bg="../img/card/caries.jpg" style="background-image: url(&quot;../img/card/caries.jpg&quot;);">
+            <h3 class="card__title">Лечение кариеса</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+          <div class="card" data-bg="../img/card/x-ray.jpg" style="background-image: url(&quot;../img/card/x-ray.jpg&quot;);">
+            <h3 class="card__title">Рентгенологическое исследование</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+          <div class="card" data-bg="../img/card/whitening.jpg" style="background-image: url(&quot;../img/card/whitening.jpg&quot;);">
+            <h3 class="card__title">Отбеливание зубов</h3><a class="card__link" href="#" target="_blank"></a>
+          </div>
+          <div class="card-slider">
+            <div class="card-slider__box">
+              <div class="card-slider__title">СОВЕТЫ</div>
+              <div class="cards owl-carousel">
+                <div class="card-item">Успешная работа нашей частной клиники с 2016 г. У каждого нашего врача опыт более 20 лет</div>
+                <div class="card-item">Анестезирующие средства заблокируют любые неприятные ощущения</div>
+                <div class="card-item">Предоставляем сертификаты ко всем нашим препаратам</div>
+                <div class="card-item">Конкурентные цены. Проводим акции на услуги и скидки пенсионерам</div>
+                <div class="card-item">В клинике установлено новое современное оборудование</div>
+                <div class="card-item">Выдаем гарантии качества, чтобы вы всегда были уверены в нашей работе</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="chat">
+          <div class="chat__container container">
+            <div class="chat__images">
+              <div class="chat__images-item" style="background-image: url('../img/chat/bg1.jpg')"></div>
+            </div>
+            <div class="chat__box">
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/user.png"/>
+              </div>
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/logo.png"/>
+              </div>
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/user.png"/>
+              </div>
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/logo.png"/>
+              </div>
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/user.png"/>
+              </div>
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/logo.png"/>
+              </div>
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/user.png"/>
+              </div>
+              <div class="chat__box-item">
+                <div class="chat__bg">
+                  <p class="chat__text"></p>
+                </div><img class="chat__avatar" src="../img/chat/logo.png"/>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="personal" id="personal">
+          <div class="container personal__container">
+            <div class="personal__slider owl-carousel">
+              <div class="personal__slider-item"><img src="../img/personal/stepan.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Степанянц Степан Арамаисович. Кандидат медицинских наук, врач высшей категории. Хирург стоматолог. Практикует с 1994 г.</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/nadejda.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Хохлова Надежда Сергеевна стоматологическая медсестра</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/vladimir.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Власов Владимир Иванович. Доктор медицинских наук. Профессор челюстно-лицевой хирург</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/valeria.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Тарасьянц Валерия Владимировна администратор нашей клиники</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/chat/bg1.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Рентгено-терапевтический кабинет</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/hir-cab.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Хирургический кабинет</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/recep.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Ресепшен и зона ожидания. Здесь мы встречаем наших пациентов</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/stepan-2.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Степанянц Степан Арамаисович. Кандидат медицинских наук , врач высшей категории хирург стоматолог. Практикует с 1994 г.</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/cab.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Хирургический кабинет</p>
+                </div>
+              </div>
+              <div class="personal__slider-item"><img src="../img/personal/rentgen.jpg"/>
+                <div class="personal__slider-content">
+                  <p class="personal__item-text">Рентгено-терапевтический кабинет</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer"><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+          <div class="footer__box">
+            <div class="footer__top">
+              <h4 class="footer__title">Запишитесь на бесплатный осмотр</h4><a class="footer__num" href="tel:84989175547">+7 (498) 917-55-47</a><a class="footer__num" href="tel:79199989919">+7 (919) 998-99-19</a>
+            </div>
+            <div class="footer__mid">
+              <p class="footer__address">Московская область, Ленинский р-н, д. Дрожжино, ул. Новое шоссе д. 7 кор. 2 пом. 3</p>
+              <div class="map" id="map"></div>
+              <p class="footer__address">Добраться до нас можно от метро Бульвар Дмитрия Донского и от ж/д станции Бутово.</p>
+            </div>
+            <div class="footer__bot">
+              <div class="footer__bot-text">Следите за нашими актуальными акциями</div><img class="footer__inst" src="../img/footer/inst.svg" alt="instagram"/>
+            </div>
+          </div>
+          <div class="footer__copyright">© 2019. Бористом</div>
+        </footer>
+      </main>
+    </div>
+    <div class="beforeBodyEnd" style="display: none">
+      <script src="../js/app.min.js"></script>
+    </div>
+  </body>
+</html>
