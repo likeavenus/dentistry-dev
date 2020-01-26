@@ -10,6 +10,10 @@
   width: 320px;
   margin: 0 auto;
 
+  @media (min-width: $iphone) {
+    width: 375px;
+  }
+
   @media (min-width: $tablet) {
     width: 768px;
   }
