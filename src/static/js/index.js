@@ -14,8 +14,9 @@ try {
     cardSlider();
     chat();
     personal();
-    footer();
 } catch (e) {
-
+    console.log(e);
+} finally {
+    footer();
 }
 

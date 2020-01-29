@@ -1,6 +1,7 @@
 extends template/_layout
 include ../components/header/header
 include ../components/lenta/lenta
+include ../components/footer/footer
 block vars
     - var title = "Винирование зубов";
 
@@ -43,3 +44,5 @@ block content
                     li.veneer__list-item Не стоит грызть твердую пищу: орехи, конфеты. Старайтесь употреблять такую еду маленькими кусочками и жевать ее зубами без виниров.
                     li.veneer__list-item Если вы занимаетесь активными видами спорта — носите защитные капы.
                     li.veneer__list-item Периодически необходимо обращаться в стоматологическую клинику для выполнения профессиональной чистки зубов. Эта процедура способна удалить весь налет.
+
+        +footer()

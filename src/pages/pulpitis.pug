@@ -1,6 +1,7 @@
 extends template/_layout
 include ../components/header/header
 include ../components/lenta/lenta
+include ../components/footer/footer
 block vars
     - var title = "Лечение пульпита";
 
@@ -53,3 +54,5 @@ block content
                     div
                         h4.inner__bottom-subtitle Хирургическое лечение.
                         p.inner__bottom-text Предполагает удаление нерва. Этот метод более популярен, он применим и на более поздней стадии течения болезни. Возможна полная или частичная ликвидация пульпы.
+
+    +footer()

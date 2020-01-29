@@ -1,0 +1,47 @@
+extends template/_layout
+include ../components/header/header
+include ../components/lenta/lenta
+include ../components/footer/footer
+block vars
+    - var title = "Реставрация зубов";
+
+
+block content
+
+    +header()
+    +lenta({
+        class: 'left'
+    })
+
+    section.inner__section
+        nav.inner__nav
+            a(href="./index.html").nav__link Главная
+            a(href="./index.html#services").nav__link  Услуги
+            span.nav__link Реставрация зубов
+
+        .inner__box
+            img(src="../img/inner/restoration.jpg").inner__avatar
+
+            .inner__info
+                .inner__info-text
+                    h1.inner__title Реставрация зубов
+
+                    ul.inner__veneer-list
+                        li.inner__veneer-item Стоимость рассчитывается на основании всех особенностей конкретного клинического случая.
+
+                a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
+
+        .inner__bottom.inner__bottom--vennering
+            p.veneer__info Восстановление зубов — это комфортная и безопасная процедура, результатом которой становится возвращение привлекательности Вашей улыбки и уверенности в себе.
+
+            .veneer__commends
+                h3.veneer__info-title Данная процедура позволяет решить следующие задачи:
+                ul.veneer__list
+                    li.veneer__list-item Восстановление формы и размеров зуба
+                    li.veneer__list-item Установка пломбы
+                    li.veneer__list-item Изменение положения зуба в ряду
+                    li.veneer__list-item Лечение кариеса любой степени сложности с последующей реконструкцией зуба
+                    li.veneer__list-item Коррекцию формы и цвета зуба
+
+
+        +footer()
