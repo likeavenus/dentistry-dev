@@ -117,10 +117,6 @@
       & .owl-prev {
         left: 488px;
       }
-
-      & .owl-next {
-        right: 190px;
-      }
     }
 
     @media (min-width: $laptop) {
@@ -132,9 +128,6 @@
         left: 750px;
       }
 
-      & .owl-next {
-        right: 300px;
-      }
     }
   }
 
