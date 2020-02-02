@@ -25,6 +25,11 @@
     width: auto;
     margin-bottom: 44px;
   }
+
+  @media (min-width: 1440px) {
+    width: 1176px;
+    margin: 0 auto 75px;
+  }
 }
 
 .nav__link {
@@ -60,6 +65,7 @@
 
   @media (min-width: 1440px) {
     margin: 0 auto;
+    width: 1176px;
   }
 }
 
