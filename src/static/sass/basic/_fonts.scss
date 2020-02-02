@@ -1,34 +1,39 @@
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato-Regular.woff') format('woff');
+  src: url('../fonts/Lato-Regular.woff') format('woff'),
+  url('../fonts/Lato-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato-italic';
-  src: url('../fonts/Lato-Italic.woff') format('woff');
+  src: url('../fonts/Lato-Italic.woff') format('woff'),
+  url('../fonts/Lato-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Yanone Kaffeesatz Reg';
-  src: url('../fonts/YanoneKaffeesatz-Regular.woff') format('woff');
+  src: url('../fonts/YanoneKaffeesatz-Regular.woff') format('woff'),
+  url('../fonts/YanoneKaffeesatz-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Yanone Kaffeesatz Bold';
-  src: url('../fonts/YanoneKaffeesatz-Bold.woff') format('woff');
+  src: url('../fonts/YanoneKaffeesatz-Bold.woff') format('woff'),
+  url('../fonts/YanoneKaffeesatz-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OswaldRegular';
-  src: url('../fonts/OswaldRegular.woff') format('woff');
+  src: url('../fonts/OswaldRegular.woff') format('woff'),
+  url('../fonts/OswaldRegular.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }

@@ -11,8 +11,13 @@
   width: 280px;
   margin: 0 auto 25px;
 
+  @media (min-width: $iphone) {
+    width: 340px;
+  }
+
   @media (min-width: $tablet) {
-    margin-left: 110px;
+    margin-left: 112px;
+    width: 500px;
   }
 
   @media (min-width: $laptop) {
@@ -27,6 +32,10 @@
   font-family: $lato;
   font-size: 12px;
   line-height: 14px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   &:not(:last-child):after {
     content: '—';

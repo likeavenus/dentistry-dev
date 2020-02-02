@@ -327,7 +327,7 @@
 
   &:hover,
   &:active {
-    color: #7E9893;
+    color: #fff;
   }
 
   @media (min-width: $laptop) {
@@ -341,6 +341,11 @@
 
     &:after {
       display: none;
+    }
+
+    &:hover,
+    &:active {
+      color: #7E9893;
     }
   }
 }
