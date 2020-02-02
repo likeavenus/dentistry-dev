@@ -1,7 +1,7 @@
 export default function footer() {
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', { // 'map' это твой id в разметке, куда ты хочешь засунуть карту
-                center: [53.244097, 34.362873],
+                center: [55.529598, 37.588853],
                 zoom: 9
             }, {
                 searchControlProvider: 'yandex#search'
@@ -12,9 +12,9 @@ export default function footer() {
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
             ),
 
-            myPlacemarkWithContent = new ymaps.Placemark([53.245951, 34.357036], {
+            myPlacemarkWithContent = new ymaps.Placemark([55.529598, 37.588853], {
                 hintContent: 'Boristom',
-                balloonContent: 'Boristom',
+                balloonContent: 'Стоматологическая клиника Boristom',
             });
 
         myMap.geoObjects

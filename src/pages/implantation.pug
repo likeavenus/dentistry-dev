@@ -1,0 +1,63 @@
+extends template/_layout
+include ../components/header/header
+include ../components/lenta/lenta
+include ../components/footer/footer
+block vars
+    - var title = "Имплантация зубов";
+
+
+block content
+
+    +header({inner: true})
+    +lenta({
+        class: 'left'
+    })
+
+    section.inner__section
+        nav.inner__nav
+            a(href="./index.html").nav__link Главная
+            a(href="./index.html#services").nav__link  Услуги
+            span.nav__link Имплантация зубов
+
+        .inner__box
+            img(src="../img/inner/implant.jpg").inner__avatar
+
+            .inner__info
+                .inner__info-text
+                    h1.inner__title Имплантация зубов
+
+                    ul.inner__implant-list
+                        li.inner__implant-item Импланты (имплантаты):
+                        li.inner__implant-item Ankylos, Германия 35 000 ₽
+                        li.inner__implant-item Osstem, Южная корея 25 000 ₽
+                        li.inner__implant-item Hiossen, CША 30 000 ₽
+                        li.inner__implant-item Формирователь десны для импланта 3000 ₽
+                        li.inner__implant-item Односторонний открытый синуслифтинг 25 000 ₽*
+                        li.inner__implant-item Односторонний закрытый синуслифтинг 15 000 ₽*
+                        li.inner__implant-item Пластика мягких тканей аутотрансплантатом 16 000 ₽*
+                        li.inner__implant-item Пластика альвеолярного гребня 30 000 ₽*
+                        li.inner__implant-item Костный материал 10 000 ₽
+                        li.inner__implant-item Установка, фиксация винтами и снятие титановой сетки 20 000 ₽
+                        li.inner__implant-item Колагеновая мембрана (резорбируемая) от 15 000 ₽
+                        li.inner__implant-item *не включая костный материал
+
+                a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
+
+        .inner__bottom.inner__bottom--vennering
+            h2.inner__bottom-title Преимущества имплантации зубов «под ключ»:
+
+            .implant__info
+                h3.implant__subtitle Эстетичность
+                p.implant__text Имплант может иметь различные дизайны и размеры. Они подбираются в соответствии с особенностями конкретного клинического случая. Поэтому после установки, новый зуб органично вписывается в ряд и не выделяется.
+
+            .implant__info
+                h3.implant__subtitle Безболезненность процедуры установки.
+                p.implant__text На предварительном этапе пациенту делается анестезия, которая избавляетот неприятных ощущений на протяжении всей операции.
+
+            .implant__info
+                h3.implant__subtitle Отсутствие вреда для соседних зубов.
+                p.implant__text Для восполнения зубного ряда в десну вживляется имплантат. Это металлический стержень с винтовой нарезкой. На него протезируется новый зуб.
+
+
+
+        +footer()

@@ -312,6 +312,7 @@
   text-decoration: none;
   margin-bottom: 24px;
   font-weight: normal;
+  transition: all .3s ease;
 
   &:after {
     width: 8px;
@@ -321,6 +322,11 @@
     vertical-align: middle;
     margin-left: 14px;
     background: url("../img/header/arr.svg") no-repeat center;
+  }
+
+  &:hover,
+  &:active {
+    color: #7E9893;
   }
 
   @media (min-width: $laptop) {

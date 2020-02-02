@@ -246,3 +246,74 @@
     margin-bottom: 30px;
   }
 }
+
+
+.inner__implant-list {
+  display: flex;
+  flex-flow: column wrap;
+
+  @media (min-width: $laptop) {
+    height: 345px;
+  }
+}
+
+.inner__implant-item {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $lato;
+  margin-bottom: 18px;
+
+  &:first-child {
+    font-weight: bold;
+  }
+
+  &:last-child {
+    font-size: 10px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 50%;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 22px;
+
+    &:last-child {
+      font-size: 14px;
+    }
+  }
+}
+
+.implant__info {
+  margin-bottom: 20px;
+}
+
+
+.implant__subtitle {
+  font-family: $lato;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+}
+
+.implant__text {
+  font-family: $lato;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (min-width: $laptop) {
+  .implant__info {
+    width: 649px;
+    margin-bottom: 30px;
+  }
+
+  .implant__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .implant__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+}

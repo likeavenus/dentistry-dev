@@ -1,5 +1,5 @@
 mixin footer(data)
-    footer.footer
+    footer.footer#contacts
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         .footer__box
             .footer__top
@@ -14,6 +14,7 @@ mixin footer(data)
 
             .footer__bot
                 .footer__bot-text Следите за нашими актуальными акциями
-                img(src="../img/footer/inst.svg" alt="instagram").footer__inst
+                a(href="https://www.instagram.com/boristomclinic/?hl=ru" target="_blank")
+                    img(src="../img/footer/inst.svg" alt="instagram").footer__inst
 
         .footer__copyright © 2020. Бористом

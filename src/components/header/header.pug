@@ -13,12 +13,20 @@ mixin header(data)
                 a(href="tel:89999999999").header__number +7 (919) 998-99-19
                 a(href="tel:89999999999").header__number +7 (498) 917-55-47
 
-            .header__links
-                a(href="#").header__link Услуги
-                a(href="#").header__link Фото
-                a(href="#").header__link Прайс
-                a(href="#").header__link Статьи
-                a(href="#").header__link Контакты
+            if (!data.inner)
+                .header__links
+                    a(href="#services").header__link Услуги
+                    a(href="#personal").header__link Фото
+                    //a(href="#").header__link Прайс
+                    //a(href="#").header__link Статьи
+                    a(href="#contacts").header__link Контакты
+            else
+                .header__links
+                    a(href="./index.html#services").header__link Услуги
+                    a(href="./index.html#personal").header__link Фото
+                    //a(href="#").header__link Прайс
+                    //a(href="#").header__link Статьи
+                    a(href="./index.html#contacts").header__link Контакты
 
 
         //- .header__left

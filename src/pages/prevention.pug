@@ -1,0 +1,46 @@
+extends template/_layout
+include ../components/header/header
+include ../components/lenta/lenta
+include ../components/footer/footer
+block vars
+    - var title = "Профилактика и гигиена зубов";
+
+
+block content
+
+    +header({inner: true})
+    +lenta({
+        class: 'left'
+    })
+
+    section.inner__section
+        nav.inner__nav
+            a(href="./index.html").nav__link Главная
+            a(href="./index.html#services").nav__link  Услуги
+            span.nav__link Профилактика и гигиена зубов
+
+        .inner__box
+            img(src="../img/inner/prevention.jpg").inner__avatar
+
+            .inner__info
+                .inner__info-text
+                    h1.inner__title Профилактика и гигиена зубов
+
+                    ul.inner__veneer-list
+                        li.inner__veneer-item Ультразвуковая чистка зубов 2000 ₽ — вся полость
+                        li.inner__veneer-item Снятие зубных отложений + Air flow 200 ₽ — 1 зуб
+                        li.inner__veneer-item Чистка зубов Air flow 2000 ₽ — вся полость
+                        li.inner__veneer-item Комплексная процедура профессиональной гигиены полости рта: ультразвук, Air Flow, полировка 4000 ₽ — вся полость
+                        li.inner__veneer-item Отбеливание Amazing White 400 ₽ — 1 зуб
+                        li.inner__veneer-item Фторирование 350 ₽ — вся полость
+
+                a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
+
+        .inner__bottom.inner__bottom--vennering
+            p.veneer__info В клинике «Бористом» клиентам предоставляется — ультразвуковая безболезненный чистка зубов аппаратом.
+            p.veneer__info Профессиональная чистка зубов — это гигиеническая процедура, позволяющая полностью избавиться от налета, зубного камня, предотвратить развитие кариеса и заболеваний десен.
+            p.veneer__info Современная аппаратура с помощью высокочастотных ультразвуковых вибраций быстро и легко растворяет твердые отложения на эмали, в том числе в придесневой области и других труднодоступных местах, не вызывая болевых ощущений.
+
+
+
+        +footer()
