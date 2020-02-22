@@ -1,6 +1,7 @@
 extends template/_layout
 include ../components/header/header
 include ../components/welcome/welcome
+include ../components/popup/popup
 include ../components/second/second
 include ../components/third/third
 include ../components/lenta/lenta
@@ -16,6 +17,7 @@ block content
   +header({inner: false})
   main.main
     +welcome()
+    +popup()
     +second()
     +lenta({
       class: ''
@@ -27,3 +29,4 @@ block content
     +chat()
     +personal()
     +footer()
+

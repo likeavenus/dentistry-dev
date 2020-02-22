@@ -2,6 +2,7 @@ extends template/_layout
 include ../components/header/header
 include ../components/lenta/lenta
 include ../components/footer/footer
+include ../components/popup/popup
 block vars
     - var title = "Рентгенологическое исследование";
 
@@ -12,6 +13,8 @@ block content
     +lenta({
         class: 'left'
     })
+
+    +popup()
 
     section.inner__section
         nav.inner__nav
