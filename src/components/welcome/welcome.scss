@@ -3,12 +3,11 @@
   padding-top: 59px;
 
   @media (min-width: $laptop) {
-    padding-top: 132px;
+    padding-top: 100px;
     height: 769px;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 99px;
     height: 800px;
   }
 }
@@ -22,6 +21,7 @@
   @media (min-width: $laptop) {
     flex-direction: row-reverse;
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -36,6 +36,7 @@
 
   @media (min-width: $laptop) {
     width: 50%;
+    height: 100%;
   }
 }
 
@@ -156,3 +157,19 @@
     line-height: 28px;
   }
 }
+
+.plyr .plyr__video-wrapper video {
+  object-fit: cover;
+  height: 100%;
+}
+
+.plyr--video {
+  width: 100%;
+  height: 100%;
+}
+
+.plyr__video-wrapper {
+  height: 100%;
+  width: 100%;
+}
+

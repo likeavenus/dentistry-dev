@@ -1,0 +1,51 @@
+extends template/_layout
+include ../components/header/header
+include ../components/lenta/lenta
+include ../components/footer/footer
+block vars
+    - var title = "Лазерная терапия";
+
+
+block content
+
+    +header({inner: true})
+    +lenta({
+        class: 'left'
+    })
+
+    section.inner__section
+        nav.inner__nav
+            a(href="./index.html").nav__link Главная
+            a(href="./index.html#services").nav__link  Услуги
+            span.nav__link Лазерная терапия
+
+        .inner__box
+            img(src="../img/inner/lazer.jpg").inner__avatar
+
+            .inner__info
+                .inner__info-text
+                    h1.inner__title Лазерная терапия
+
+                    ul.inner__veneer-list
+                        li.inner__veneer-item Лезерная терапия 300 ₽ — вся полость
+
+                a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
+
+        .inner__bottom.inner__bottom--vennering
+
+            .veneer__commends
+                h3.veneer__info-title Стоматолог назначает процедуру в случае:
+                ul.veneer__list
+                    li.veneer__list-item После хирургического удаления зуба
+                    li.veneer__list-item При периоститах
+                    li.veneer__list-item После кюретаже
+                    li.veneer__list-item При серьёзных гингивитах и других заболеваниях слизистой полости рта
+                    li.veneer__list-item После пломбирования корневых каналов
+                    li.veneer__list-item При пародонтите
+                    li.veneer__list-item При альвеолите
+                    li.veneer__list-item При среднем и глубоком кариесе
+                    li.veneer__list-item При лечении кариеса зубов на стадии деминерализации и мелового пятна
+
+
+
+        +footer()

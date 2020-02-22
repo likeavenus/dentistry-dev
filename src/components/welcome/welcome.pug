@@ -2,9 +2,9 @@ mixin welcome(data)
     section.welcome
         .welcome__container.container
             .video__box.js-video-wrap
-                video#player(playsinline controls)
+                video#player(playsinline controls muted)
                     source(src="../img/welcome/video.mp4" type="video/mp4")
-                button(type="button").video__play.js-play-video
+                button(type="button").video__play.active.js-play-video
             .welcome__box
                 h1.welcome__title Красивая улыбка начинается со&nbsp;здоровых зубов
                 p.welcome__subtitle Лечение зубов по оптимальной цене

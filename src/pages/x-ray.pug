@@ -1,0 +1,47 @@
+extends template/_layout
+include ../components/header/header
+include ../components/lenta/lenta
+include ../components/footer/footer
+block vars
+    - var title = "Рентгенологическое исследование";
+
+
+block content
+
+    +header({inner: true})
+    +lenta({
+        class: 'left'
+    })
+
+    section.inner__section
+        nav.inner__nav
+            a(href="./index.html").nav__link Главная
+            a(href="./index.html#services").nav__link  Услуги
+            span.nav__link Рентгенологическое исследование
+
+        .inner__box
+            img(src="../img/inner/x-ray.jpg").inner__avatar
+
+            .inner__info
+                .inner__info-text
+                    h1.inner__title Рентгенологическое исследование
+
+                    ul.inner__veneer-list
+                        li.inner__veneer-item Рентген 500 ₽
+
+                a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
+
+        .inner__bottom.inner__bottom--vennering
+
+            .veneer__info Рентген дает возможность оценить состояние твердых и мягких структур, околозубных тканей, взаиморасположение зубов и корневых систем.
+            h2.inner__bottom-title Рентген делают чтобы:
+
+            .veneer__info Уточнить глубину, степень, характер патологического процесса при пародонтозе, периодонтите, кариесе, пульпите, о новообразованиях — киста корня или гранулема.
+            .veneer__info Исключить осложнения после удаления зуба и во время проведения процедуры: на снимке будет четко видно расположение корней, их строение.
+            .veneer__info Определить дефекты, аномалии прикуса и запланировать дальнейшее лечение.
+            .veneer__info При задержке прорезывания зубов, когда требуется проверить, есть ли их зачатки, определить направление роста.
+            .veneer__info Проконтролировать качество и эффективность лечения — насколько верно запломбированы каналы, установлена пломба, имплантат, протез.
+
+
+
+        +footer()

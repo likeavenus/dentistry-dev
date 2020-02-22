@@ -17,8 +17,16 @@
   }
 
   @media (min-width: 1440px) {
-    width: 437px;
-    height: 325px;
+    //width: 437px;
+    //height: 325px;
+    flex-grow: 1;
+    flex-basis: 30%;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    //max-width: 595px;
+    height: 444px;
   }
 }
 
@@ -69,6 +77,11 @@
     font-size: 18px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 
@@ -112,6 +125,21 @@
 
       & .owl-next {
         left: 152px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      & button {
+        width: 17px;
+        height: 30px;
+      }
+
+     & .owl-prev {
+       bottom: -130px;
+     }
+
+      & .owl-next {
+        bottom: -130px;
       }
     }
   }

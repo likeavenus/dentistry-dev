@@ -2,7 +2,7 @@
   display: block;
 
   @media (min-width: $laptop) {
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
   }
 }
 
@@ -20,8 +20,9 @@
   }
 
   @media (min-width: 1440px) {
-    width: 1310px;
+    //width: 1310px;
     margin: 0 auto;
+    width: 100%;
     justify-content: center;
   }
 }
@@ -46,9 +47,11 @@
   }
 
   @media (min-width: 1440px) {
-    width: 669px;
-    height: 504px;
-    max-width: none;
+    //width: 669px;
+    //height: 504px;
+    max-width: 100%;
+    width: 50%;
+    height: 678px;
   }
 }
 
@@ -93,7 +96,8 @@
   }
 
   @media (min-width: 1440px) {
-    width: 515px;
+    //width: 515px;
+    width: 45%;
   }
 }
 

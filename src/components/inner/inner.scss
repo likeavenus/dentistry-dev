@@ -300,6 +300,20 @@
       font-size: 14px;
     }
   }
+
+  &--normal {
+    &:first-child {
+      font-weight: normal;
+    }
+
+    @media (min-width: $laptop) {
+      &:last-child {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+  }
 }
 
 .implant__info {

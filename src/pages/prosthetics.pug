@@ -1,0 +1,51 @@
+extends template/_layout
+include ../components/header/header
+include ../components/lenta/lenta
+include ../components/footer/footer
+block vars
+    - var title = "Протезирование зубов";
+
+
+block content
+
+    +header({inner: true})
+    +lenta({
+        class: 'left'
+    })
+
+    section.inner__section
+        nav.inner__nav
+            a(href="./index.html").nav__link Главная
+            a(href="./index.html#services").nav__link  Услуги
+            span.nav__link Протезирование зубов
+
+        .inner__box
+            img(src="../img/inner/prosthetics.jpg").inner__avatar
+
+            .inner__info
+                .inner__info-text
+                    h1.inner__title Протезирование зубов
+
+                    ul.inner__veneer-list
+                        li.inner__veneer-item Стоимость рассчитывается на основании всех особенностей конкретного клинического случая
+
+                a(href="#").button__sig-up.inner__info-btn  Записаться на бесплатный приём
+
+        .inner__bottom.inner__bottom--vennering
+            h2.inner__bottom-title Виды протезирования:
+
+            .implant__info
+                h3.implant__subtitle Несъемное протезирование
+                p.implant__text Изготавливаются протезы, которые фиксируются на зубах, соседних с пустотой в зубном ряду. Современные материалы и конструкции позволяют в точности реконструировать отсутствующий зуб и сделать его неотличимым от собственных зубов.
+
+            .implant__info
+                h3.implant__subtitle Съемное протезирование
+                p.implant__text Благодаря возможности снимать такие приспособления, эти конструкции могут использоваться в качестве постоянной замены собственным зубам, так и применяться при временном протезировании перед имплантацией.
+
+            .implant__info
+                h3.implant__subtitle Бюгельное протезирование
+                p.implant__text Состоит из дуги, искусственных зубов и опорных элементов. Дуга — на ней держится акриловый каркас, имитирующий десну, в который установлены коронки зубов.
+
+
+
+        +footer()

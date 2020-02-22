@@ -1,22 +1,31 @@
 import Plyr from 'plyr';
 export default function welcome() {
-    const player = new Plyr('#player', {
-        controls: ['mute', 'captions'],
-        fullscreen: false
-    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const player = new Plyr('#player', {
+            controls: ['mute', 'captions'],
+            settings: ['loop'],
+            fullscreen: false,
+            autoplay: true,
+        });
 
-    const playButton = document.querySelector('.js-play-video');
-    const videoWrap = document.querySelector('.js-video-wrap');
+        const playButton = document.querySelector('.js-play-video');
+        const videoWrap = document.querySelector('.js-video-wrap');
 
-    playButton.addEventListener('click', function(e) {
-        e.stopPropagation();
-        player.play();
+        playButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            player.play();
 
-        this.classList.add('active');
-    });
+            this.classList.add('active');
+        });
 
-    videoWrap.addEventListener('click', () => {
-        playButton.classList.remove('active');
-        player.pause();
+        videoWrap.addEventListener('click', () => {
+            playButton.classList.remove('active');
+            player.pause();
+        })
     })
+
+
+
+
+
 }
